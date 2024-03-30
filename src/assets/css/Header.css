@@ -1,0 +1,82 @@
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a.nav-link {
+  color: black;
+}
+
+.submenu {
+  position: absolute;
+  width: 250px; /* Adjusted width for submenu */
+  background-color: #ffffff;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden; /* Added to hide submenu initially */
+  transition: opacity 0.5s, visibility 0.5s; /* Added visibility to transition */
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px; /* Added padding for spacing */
+}
+
+.submenu li {
+  width: 100%; /* Each submenu item takes full width */
+  padding: 5px 0; /* Adjusted padding for submenu items */
+}
+
+.nav-item:hover .submenu {
+  opacity: 1;
+  visibility: visible; /* Show submenu on hover */
+}
+
+.navbar-nav .nav-item {
+  position: relative; /* Added relative positioning to nav items */
+}
+
+/* Adjusted navbar-brand style */
+.navbar-brand img {
+  height: 30px;
+}
+
+/* Added hover effect for nav links */
+.navbar-nav .nav-item:hover .nav-link {
+  color: rgb(9, 9, 9); /* Change color on hover */
+  text-decoration: none;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+.navbar-nav > li :hover {
+  list-style-type: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  list-style-type: none;
+}
+.submenu li {
+  list-style-type: none;
+}
+/* .navbar-expand-lg .navbar-collapse {
+  display: flex !important;
+  justify-content: flex-end;
+} */
+
+/* div#basic-navbar-nav {
+  display: flex;
+  justify-content: end;
+} */
+
+.nav_item{
+  display: flex;
+  justify-content: end;
+}

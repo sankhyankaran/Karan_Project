@@ -1,0 +1,14 @@
+.icon{
+    cursor: pointer;
+}
+/* footer.css */
+.col-lg-3 ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .contact_us li:hover {
+    color: #ed900d; /* Change the color to your desired color */
+  }
+  

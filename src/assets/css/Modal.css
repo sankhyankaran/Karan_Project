@@ -1,0 +1,25 @@
+img.cup_image{
+    position: absolute;
+    /* height: 243px; */
+    width: 300px;
+    left: -30px;
+    bottom: 0;
+    margin: auto;
+}
+/* element.style {
+    background-image: url("/src/assets/images/modal/image.png");
+    background-size: contain;
+    height: 533px;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-position: 18% 0%;
+} */   
+
+/* Assuming your CSS file or style block */
+.custom-border {
+    border-color: black; /* Change 'black' to the desired color */
+}
+.custom-radio{
+    font-weight: 400;
+    
+}
