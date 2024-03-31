@@ -89,6 +89,10 @@ import zipeasts from "../assets/images/clients/zipeats.webp";
 import zajel from "../assets/images/clients/zajel.webp";
 import Taste1 from "../assets/images/Taste/sliderdown1.svg";
 import Taste2 from "../assets/images/Taste/taste2.webp";
+import blogs from "../assets/images/Blogs/BLogs.png";
+import blog1 from "../assets/images/Blogs/blog1.jpg";
+import blog2 from "../assets/images/Blogs/blog2.webp";
+import blogmeesho from "../assets/images/Blogs/Meeshoblog.webp";
 
 function Home() {
   var settings = {
@@ -977,106 +981,105 @@ function Home() {
           style={{
             Transition: "all 0.25s ease 0s",
             transform: "translate3d(-7982px, 0px, 0px)",
-          }}>
-          <div
-            id="controls-carousel"
-            class="relative w-full"
-            data-carousel="static">
-            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <h1>Retainlytics</h1>
-              </div>
+          }}></div>
+      </div>
 
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img
-                  src={Taste1}
-                  style={{ height: "100px", width: "100%" }}
-                  alt="..."
-                />
-              </div>
-
-              <div
-                class="hidden duration-700 ease-in-out"
-                data-carousel-item="active">
-                <img
-                  src={Taste2}
-                  style={{ height: "100px", width: "100%" }}
-                  alt="..."
-                />
-              </div>
-
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img
-                  src={Taste1}
-                  style={{ height: "100px", width: "100%" }}
-                  alt="..."
-                />
-              </div>
-
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img
-                  src={Taste2}
-                  style={{ height: "100px", width: "100%" }}
-                  alt="..."
-                />
-              </div>
-
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img
-                  src={Taste2}
-                  style={{ height: "100px", width: "100%" }}
-                  alt="..."
-                />
+      {/* Latest blogs */}
+      <div className="container my-5">
+        <div className="d-flex align-items-center mt-5">
+          <Image
+            src={blogs}
+            style={{ height: "25pX", width: "auto", marginRight: "10px" }}
+          />
+          <h5 className="mb-0"> Latest Blogs</h5>
+        </div>
+        <h3 className="fw-bold my-3">The Brewer’s Guide</h3>
+        <p>
+          A simple way to stay tuned with the latest digital solutions and
+          updates.
+        </p>
+        <div className="row d-flex justify-content-between my-5">
+          <div className="col-lg-6 col-sm-12 d-flex">
+            <div
+              className="col-lg-3"
+              style={{
+                backgroundImage: `url(${blog1})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                height: "220px",
+                width: "66%",
+                cursor: "pointer",
+              }}></div>
+            <div
+              className="col-lg-6 col-sm-12 px-5 py-5"
+              style={{
+                backgroundColor: "rgb(255, 165, 0)",
+                height: "220px",
+                width: "66%",
+              }}>
+              <h5 className="fw-bold">How To Build An App Like Bolt?</h5>
+              <div className="btn-containers my-3">
+                <div className="button_news">
+                  <button className="pulses">Read More</button>
+                </div>
               </div>
             </div>
+          </div>
+          <div
+            className="col-lg-4"
+            style={{
+              backgroundImage: `url(${blogmeesho})`,
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+              height: "220px",
+              cursor: "pointer",
+            }}></div>
+        </div>
 
-            <button
-              type="button"
-              class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-              data-carousel-prev>
-              <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg
-                  class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 6 10">
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 1 1 5l4 4"
-                  />
-                </svg>
-                <span class="sr-only">Previous</span>
-              </span>
-            </button>
-            <button
-              type="button"
-              class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-              data-carousel-next>
-              <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg
-                  class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 6 10">
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m1 9 4-4-4-4"
-                  />
-                </svg>
-                <span class="sr-only">Next</span>
-              </span>
-            </button>
+        <div className="row d-flex justify-content-between ">
+          <div className="col-lg-6 col-sm-12 d-flex">
+            <div
+              className="col-lg-6 col-sm-12 px-5 py-5"
+              style={{
+                backgroundColor: "rgb(210, 210, 210)",
+                height: "220px",
+                width: "66%",
+              }}>
+              <h5 className="fw-bold">How To Build An App Like Bolt?</h5>
+              <div className="btn-containers my-3">
+                <div className="button_news">
+                  <button className="pulses">Read More</button>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-lg-3"
+              style={{
+                backgroundImage: `url(${blog2})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                height: "220px",
+                width: "66%",
+                cursor: "pointer",
+              }}></div>
+          </div>
+          <div
+            className="col-lg-4 py-5 px-4 "
+            style={{
+              backgroundColor: "#5203fc",
+              height: "220px",
+              
+            }}>
+           <h5 className="fw-bold text-white">Meesho’s IPO Race 2024: What Entrepreneurs Need to Know!</h5>
+            <div className="btn-containers my-3">
+              <div className="button_news">
+                <button className="pulses">Read More</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
       {/* ContactUs Section */}
       <div
         className="container my-5"
